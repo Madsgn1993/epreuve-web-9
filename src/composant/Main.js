@@ -1,4 +1,21 @@
+import { menus } from "./TabMenu";
+
 const Main = () => {
+
+
+  function getMenu() {
+
+      let listMenu = menus.map((menu) => 
+        <div>
+          <li>{menu.entres}</li> 
+          <li>{menu.plats}</li> 
+          <li>{menu.desserts}</li> 
+
+        </div>
+      );
+       console.log(listMenu)
+
+  }
   return (
     <div id="content_main">
       <div id="content_leftRigth">
@@ -15,8 +32,7 @@ const Main = () => {
               blandit, dolor libero tincidunt ipsum, a varius ipsum purus ut
               urna. Sed porta molestie purus, non lacinia nunc feugiat vitae.
             </p>
-          <button type="submit">MENU DU JOUR</button>
-
+            <button onClick={getMenu}>MENU DU JOUR</button>
           </div>
         </div>
         <div id="rigth">
