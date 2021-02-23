@@ -1,23 +1,28 @@
-import { menus } from "./TabMenu";
+//import { menus } from "./TabMenu";
+//import MenuDuJour from "./MenuDujour"
 
 const Main = () => {
 
+ 
+  function getMenu(){
 
-  function getMenu() {
 
-      let listMenu = menus.map((menu) => 
-        <div>
-          <li>{menu.entres}</li> 
-          <li>{menu.plats}</li> 
-          <li>{menu.desserts}</li> 
+    alert(
+      
+      
+      "Entrées : Endive, salade croquante et vinaigrette à l'orange ou potage de courge ( selon marché ). Plats : Falafel Burger: Bun's au sarrasin, galette de pois-chiche frite, coleslaw, sauce tahini , accompagné de pommes de terre sautées ou Burger Salvi: Bun's au sarrasin, épaule de cochon confite au cidre, sauce BBC maison, champignons, accompagné de pommes de terre sautées. Desserts : Cookie au chocolat ou Salade de fruit"
+  
+    
+    )
 
-        </div>
-      );
-       console.log(listMenu)
 
   }
+
   return (
     <div id="content_main">
+      <div id="content_unstensil">
+        <img src="./data/cuisine.png" alt="ustensilCuisine"/>        
+      </div>
       <div id="content_leftRigth">
         <div id="left">
           <img src="../data/curry_de_legume.jpg" alt="photo_plat" />
@@ -33,6 +38,7 @@ const Main = () => {
               urna. Sed porta molestie purus, non lacinia nunc feugiat vitae.
             </p>
             <button onClick={getMenu}>MENU DU JOUR</button>
+            <div id="content_menuDuJour"></div>
           </div>
         </div>
         <div id="rigth">

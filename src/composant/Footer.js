@@ -12,7 +12,7 @@ const Footer = () => {
             odio, quis aliquet mauris dignissim vitae. Vestibulum cursus sem eu
             urna pretium, eget accumsan leo maximus. Maecenas nec
           </p>
-          <button type="submit">Voter</button>
+          <button id="voter" type="submit">Voter</button>
         </div>
         <div id="illu_footer">
           <div id="orange">
